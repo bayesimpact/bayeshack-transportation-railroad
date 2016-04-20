@@ -19,8 +19,15 @@ By creating descriptive models that examine empiric data on train fatalities and
 
 ## Data Quirks
 #### Important things to know or notice
-* Foo
-* Bar
+* This is all railroad ACCIDENTS (a "casualty" is not necessarily a death)
+* The FATAL column gives a binary indication of if someone died (~9% of records)
+* Many columns are NOT AVAILABLE FOR ALL TIME. You can figure this out yourself by looking at a given column, and seeing how often its non-null each year, but some examples are below:
+  * Lat/long is not recorded until sometime in 2003
+  * COUNTY is not recorded until sometime in 1997
+  * Day of month (DAY) and time of day (TIMEHR TIMEMIN) are not recorded until 1997
+  * Basically, be careful how you interpret a field if you're doing all-time aggregates. Look at the example notebook (in `analysis/`) for a nice table of which fields were populated over time.
+* ** IMPORTANT ** -- The `FRA_GUIDE.pdf` file is the official DoT guide to the data collection process, with appendices explaining the coding of every column (though they dont explicitly give the column name, you can infer it).
+
 
 ## Resources
 

@@ -11,7 +11,7 @@ By creating descriptive models that examine empiric data on train fatalities and
 
 ## In this Repo
 
-* `data/` - Cleaned and prepared data sources. NOTE - Not all data exists here -- see Resources section below.
+* `data/` - Cleaned and prepared data sources
    * `data/samples/` contains heavily downsampled versions of datasets, so you can poke around easily. They're in CSV, so Excel or Google Sheets should be able to load them too.
 * `analysis/` - iPyton notebook files (which you can view right here on GitHub) loading the data and exploring a few things. Good to understand the datasets and get ideas for your project.
 * `cleaning/` - See the data preprocessing code we used (`cleaning/scripts/`), and the raw data sources that preceded the clean ones (`cleaning/raw-data/`).
@@ -27,8 +27,3 @@ By creating descriptive models that examine empiric data on train fatalities and
   * Day of month (DAY) and time of day (TIMEHR TIMEMIN) are not recorded until 1997
   * Basically, be careful how you interpret a field if you're doing all-time aggregates. Look at the example notebook (in `analysis/`) for a nice table of which fields were populated over time.
 * ** IMPORTANT ** -- The `FRA_GUIDE.pdf` file is the official DoT guide to the data collection process, with appendices explaining the coding of every column (though they dont explicitly give the column name, you can infer it).
-
-
-## Resources
-
-* External resource links

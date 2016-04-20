@@ -1,7 +1,7 @@
 # Bayes Hack 2016
 ### Department of Transportation Prompt #2
 
-### _How can data help us heal communities at high risk for suicide?_
+_How can data help us heal communities at high risk for suicide?_
 
 ## Prompt
 
